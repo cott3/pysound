@@ -7,6 +7,8 @@
 
 ### (comes with 2 sample sounds)
 
+## setup: clone/download the git repo
+
 #### use it however you want!
 
 # q&a:
