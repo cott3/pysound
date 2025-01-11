@@ -3,6 +3,7 @@
 #by cott122
 
 #libs, inits, variables and other stuff
+from tkinter import ttk
 import pygame
 import tkinter as tk
 
@@ -11,6 +12,7 @@ pygame.mixer.init()
 
 current_sound = None
 is_playing = False
+
 #
 
 #defining functions
@@ -38,19 +40,32 @@ def load_sounds():
 #
 
 #gui stuff
+
 window = tk.Tk()
 window.title("pysound")
-
-sound_listbox = tk.Listbox(window)
-sound_listbox.pack()
+window.geometry("300x300")  
 
 
-status_label = tk.Label(window, text="")
-status_label.pack()
+style = ttk.Style()
+style.theme_use("clam") 
+style.configure("TButton", padding=10, font=("Arial", 12))
 
-play_pause_button = tk.Button(window, text="Play/Stop", command=play_stop_sound)
-play_pause_button.pack()
-#
+
+sound_listbox = tk.Listbox(window, width=30, height=10)
+sound_listbox.pack(pady=10)
+
+
+status_label = tk.Label(window, text="", font=("Arial", 10))
+status_label.pack(pady=5)
+
+
+play_pause_button = ttk.Button(window, text="Play/Stop", command=play_stop_sound)
+play_pause_button.pack(pady=5)
+
+
+button_frame = tk.Frame(window)
+button_frame.pack()
+
 
 #you'll never guess what this does
 load_sounds()

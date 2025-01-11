@@ -1,4 +1,8 @@
 # pysound changelog
+## current version is: 0.3
+
+## 0.3
+ - ui overhaul
 
 ## 0.2 
  - changed the included sounds

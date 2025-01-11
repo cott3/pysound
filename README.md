@@ -1,4 +1,4 @@
-# pysound 0.2 beta
+# pysound 0.3 beta
 
 
 ## THIS IS A VERY BAREBONES VERSION. DO NOT EXPECT MUCH FUNCTIONALITY. (tho you can contribute to future updates!)
